@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg: #ffffff;
+    --surface: #f6f8fb;
+    --muted:#64748b;
+    --primary:#2563eb;
+    --primary-dark:#1d4ed8;
+    --accent:#0ea5e9;
+    --border:#e5e7eb;
+    --radius:14px;
+    --shadow:0 10px 30px -12px rgba(15,23,42,.18);
+    --container:1140px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+    color:var(--text);
+    background:var(--bg);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Buttons */
+/* 
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: .95rem;
+    transition: .2s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.btn-outline {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background: var(--primary);
+    color: #fff;
+} */
+
+
+
+
+/* -- navbar --- */
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255,255, 0.85);
+    backdrop-filter: saturate(180%) blur(10px);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.logo-mark {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    /* background: linear-gradient(135deg, var(--primary), var(--accent)); */
+    background: #59B292;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+.logo-text {
+    font-size: 1.05rem;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-menu a {
+    font-size: 500;
+    color: var(--muted);
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
+.nav-toggle {
+    display: none;
+    background: nonen;
+    border: 0;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+}
