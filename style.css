@@ -390,3 +390,54 @@ ul {
 }
 
 
+/* --- about --- */
+
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.about-grid h2 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    margin-bottom: 18px;
+}
+
+.about-grid p {
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.stat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.stat-grid li {
+    background: #fff;
+    border-radius: var(--radius);
+    padding: 24px;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.stat-grid strong {
+    display: block;
+    font-size: 2rem;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.stat-grid span {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+
+
