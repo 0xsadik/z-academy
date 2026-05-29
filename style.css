@@ -441,3 +441,33 @@ ul {
 
 
 
+/* contact  */
+
+.cta-inner {
+    padding: 7% 0;
+}
+
+.cta {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    margin-bottom: 12px;
+}
+
+.cta p {
+    opacity: 0.9;
+    margin-bottom: 28px;
+}
+
+.cta .btn-primary {
+    background: #fff;
+    color: var(--primary);
+}
+
+.cta .btn-primary:hover {
+    background: #f1f5f9;
+}
